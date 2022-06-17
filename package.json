@@ -1,0 +1,20 @@
+{
+  "name": "project_website",
+  "version": "1.0.0",
+  "description": "Project website for hyperspectral imagery research",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "predeploy": "npm run build",
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "author": "Deep Patel",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
+  }
+}
