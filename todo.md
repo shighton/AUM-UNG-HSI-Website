@@ -1,0 +1,4 @@
+- hamburger menu
+- link all pages
+- download all the imgs
+-
