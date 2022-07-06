@@ -10,6 +10,7 @@ import Collaborators from "./pages/Collaborators";
 // import Publications from "./screens/Publications";
 import AppBar from "./components/app_bar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Timeline from "./pages/timeline";
 
 export function App() {
   return (
@@ -19,12 +20,14 @@ export function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/collaborators" element={<Collaborators />} />
+
           {/*<Route path="/links" element={<Links />} />
           <Route path="/camera" element={<Camera />} />
           
           <Route path="/contact" element={<Contact />} />
-          <Route path="/meetings" element={<Meetings />} />
+          
           <Route path="/publications" element={<Publications />} /> */}
+          <Route path="/timeline" element={<Timeline />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

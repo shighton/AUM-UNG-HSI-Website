@@ -10,14 +10,14 @@ const Links = [
     path: "/about",
     text: "About",
   },
-  {
-    path: "/links",
-    text: "Links",
-  },
-  {
-    path: "/camera",
-    text: "Camera",
-  },
+  // {
+  //   path: "/links",
+  //   text: "Links",
+  // },
+  // {
+  //   path: "/camera",
+  //   text: "Camera",
+  // },
   {
     path: "/collaborators",
     text: "Collaborators",
@@ -27,12 +27,8 @@ const Links = [
     text: "Contact",
   },
   {
-    path: "/meetings",
-    text: "Meetings",
-  },
-  {
-    path: "/publications",
-    text: "Publications",
+    path: "/timeline",
+    text: "Timeline",
   },
 ];
 
