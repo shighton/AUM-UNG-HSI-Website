@@ -23,42 +23,48 @@ export function Home() {
       </div>
       <div className="mt-16 px-8">
         <p className="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis
-          urna cursus eget nunc. Ut eu sem integer vitae justo eget magna
-          fermentum iaculis. Ut tristique et egestas quis ipsum suspendisse.
-          Quisque id diam vel quam elementum. Auctor neque vitae tempus quam
-          pellentesque nec. At auctor urna nunc id cursus. Non sodales neque
-          sodales ut etiam sit amet nisl purus. Faucibus pulvinar elementum
-          integer enim neque volutpat. Nulla facilisi cras fermentum odio eu
-          feugiat pretium. Sapien faucibus et molestie ac feugiat sed lectus.
-          Varius vel pharetra vel turpis. Quis auctor elit sed vulputate mi. Nam
-          at lectus urna duis convallis convallis. Scelerisque eu ultrices vitae
-          auctor eu. Pretium vulputate sapien nec sagittis aliquam malesuada
-          bibendum arcu vitae. Vitae congue eu consequat ac felis donec et. Eget
-          sit amet tellus cras adipiscing enim eu turpis. Quam vulputate
-          dignissim suspendisse in est ante. Facilisis sed odio morbi quis
-          commodo. Sit amet facilisis magna etiam tempor orci eu lobortis.
-          Mattis rhoncus urna neque viverra justo. Natoque penatibus et magnis
-          dis parturient montes nascetur. Massa sapien faucibus et molestie ac
-          feugiat. Elit scelerisque mauris pellentesque pulvinar pellentesque
-          habitant. Facilisis volutpat est velit egestas dui. Libero volutpat
-          sed cras ornare arcu dui. Faucibus et molestie ac feugiat sed lectus
-          vestibulum mattis ullamcorper. Viverra vitae congue eu consequat.
-          Molestie a iaculis at erat pellentesque adipiscing commodo elit. Risus
-          commodo viverra maecenas accumsan lacus vel facilisis volutpat. Mauris
-          cursus mattis molestie a. Lacus vestibulum sed arcu non odio. Purus ut
-          faucibus pulvinar elementum integer. In fermentum et sollicitudin ac.
-          Ipsum suspendisse ultrices gravida dictum fusce ut. Nec nam aliquam
-          sem et tortor consequat. Cursus sit amet dictum sit amet. Duis
-          ultricies lacus sed turpis. Tincidunt vitae semper quis lectus. Morbi
-          tincidunt augue interdum velit euismod in pellentesque. Arcu cursus
-          vitae congue mauris rhoncus aenean vel. Interdum velit euismod in
-          pellentesque massa placerat duis ultricies. Facilisis mauris sit amet
-          massa vitae tortor condimentum lacinia quis. Interdum posuere lorem
-          ipsum dolor sit amet consectetur adipiscing. Enim blandit volutpat
-          maecenas volutpat blandit aliquam etiam erat velit. Diam maecenas
-          ultricies mi eget.
+          We propose to develop a real time, multi-layer, and modular
+          segmentation framework for hyperspectral images (HSI). Our framework
+          aims to automatically identify various regions within a hyperspectral
+          image by classifying each pixel of the image and associating them to
+          class segments. We will develop a multi-layer system, where each
+          layer's responsibility is to perform an operation on its input,
+          generate region classification data, and pass the resultant output to
+          the next layer. Importantly, each layer analyzesits input from
+          distinct viewpoints, utilizing spectral and spatial data, resulting in
+          a multi-layer framework where the layers complement each other. Since
+          the system is highly parallelizable, we will exploit high performance
+          computing (HPC) tools and resources to achieve a real-time
+          performance.
+        </p>
+        <br />
+        <p className="text-lg">
+          Although the proposed framework is a domain independent solution, we
+          will apply it to the atmospheric cloud detection problem, where cloud
+          albedos on the earth's surface are measured by field experts. We have
+          chosen this problem for two reasons: 1) cloud detection is a unique
+          and challenging problem involving multi-class classification and
+          segmentation to evaluate our framework; and 2) to the best of our
+          knowledge, HSI has not been applied to the cloud detection problem.
+          With the rich spectral information from a large portion of the
+          spectrum, HSI has a big potential for accurate cloud region detection.
+          Our initial data analysis supported this argument by identifying more
+          informative features at beyond visible light.
+        </p>
+        <br />
+        <p className="text-lg">
+          The proposed project will be implemented in collaboration by two
+          predominantly undergraduate institutions: Auburn University at
+          Montgomery (AUM) and University of North Georgia (UNG). The duration
+          of the project will be three years and consist of four phases. In the
+          first year, our research will focus on data collection and initial
+          data analysis (Phase 1). In the second year, we will build
+          classification models, create simulations, and implement prototypes of
+          the system (Phase 2). In the same year, we will start the integration
+          of HPC tools to the classification models (Phase 3). Finally in the
+          third year, we will complete implementation, testing, and deployment
+          of the open-source software (Phase 4). The project will be managed by
+          two PIs Dr. Semih Dinc and Dr. Luis Cueva Parra.
         </p>
       </div>
       <div className="mt-16">

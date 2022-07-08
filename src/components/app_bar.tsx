@@ -10,14 +10,14 @@ const Links = [
     path: "/about",
     text: "About",
   },
-  // {
-  //   path: "/links",
-  //   text: "Links",
-  // },
-  // {
-  //   path: "/camera",
-  //   text: "Camera",
-  // },
+  {
+    path: "/links",
+    text: "Links",
+  },
+  {
+    path: "/instruments",
+    text: "Instruments",
+  },
   {
     path: "/collaborators",
     text: "Collaborators",
@@ -47,7 +47,7 @@ export default function AppBar() {
     <div className="AppBar w-full flex bg-white py-8 px-8">
       <div className="flex-1">
         <Link to="/" className="font-semibold text-lg">
-          Project Name
+          AUM-UNG HSI Research
         </Link>
       </div>
       <div className="hidden lg:flex flex-1 justify-end">

@@ -32,7 +32,7 @@ function Step({ title, desc, status }: StepProps) {
 
 const TIMELINE: StepProps[] = [
   {
-    title: "Step 6",
+    title: "Phase 4: Software Implementation, Testing, and Deployment",
     desc: `
     Fusce fermentum nulla id eros aliquam, non blandit 
     ante malesuada. Quisque accumsan et odio sed venenatis. 
@@ -52,7 +52,7 @@ const TIMELINE: StepProps[] = [
     status: StepStatus.PLANNED,
   },
   {
-    title: "Step 5",
+    title: "Phase 3: HPC integration and Software Design",
     desc: `
     Fusce fermentum nulla id eros aliquam, non blandit 
     ante malesuada. Quisque accumsan et odio sed venenatis. 
@@ -72,7 +72,7 @@ const TIMELINE: StepProps[] = [
     status: StepStatus.ACTIVE,
   },
   {
-    title: "Step 4",
+    title: "Phase 2: Building Classification Model and Prototyping",
     desc: `
     Fusce fermentum nulla id eros aliquam, non blandit 
     ante malesuada. Quisque accumsan et odio sed venenatis. 
@@ -92,7 +92,7 @@ const TIMELINE: StepProps[] = [
     status: StepStatus.ACTIVE,
   },
   {
-    title: "Step 3",
+    title: "Phase 1: Data Collection and Analysis",
     desc: `
     Fusce fermentum nulla id eros aliquam, non blandit 
     ante malesuada. Quisque accumsan et odio sed venenatis. 
@@ -109,47 +109,7 @@ const TIMELINE: StepProps[] = [
     Morbi ex lectus, tristique nec porta id, tincidunt eget sem.
     Donec molestie nisl non lacinia cursus.
     `,
-    status: StepStatus.COMPLETED,
-  },
-  {
-    title: "Step 2",
-    desc: `
-    Fusce fermentum nulla id eros aliquam, non blandit 
-    ante malesuada. Quisque accumsan et odio sed venenatis. 
-    Mauris id lacus at velit feugiat suscipit nec quis augue. 
-    Etiam consequat dui dui, sed feugiat turpis malesuada quis. 
-    Vestibulum sed augue fringilla, facilisis quam et, pharetra nisl. 
-    Aenean in sem dui. Praesent elementum sed tortor quis facilisis. 
-    Aenean sit amet lorem tempor, porttitor turpis eget, vulputate nisi. 
-    Mauris nisl turpis, ornare a nibh vehicula, pharetra faucibus erat. 
-    Etiam a ante at mauris luctus bibendum. Ut venenatis tellus id sagittis laoreet.
-    Suspendisse ornare et velit sit amet fringilla. Duis est risus, 
-    elementum vitae faucibus sit amet, suscipit a eros. Morbi turpis 
-    dolor, accumsan at est et, dapibus imperdiet tortor. 
-    Morbi ex lectus, tristique nec porta id, tincidunt eget sem.
-    Donec molestie nisl non lacinia cursus.
-    `,
-    status: StepStatus.COMPLETED,
-  },
-  {
-    title: "Step 1",
-    desc: `
-    Fusce fermentum nulla id eros aliquam, non blandit 
-    ante malesuada. Quisque accumsan et odio sed venenatis. 
-    Mauris id lacus at velit feugiat suscipit nec quis augue. 
-    Etiam consequat dui dui, sed feugiat turpis malesuada quis. 
-    Vestibulum sed augue fringilla, facilisis quam et, pharetra nisl. 
-    Aenean in sem dui. Praesent elementum sed tortor quis facilisis. 
-    Aenean sit amet lorem tempor, porttitor turpis eget, vulputate nisi. 
-    Mauris nisl turpis, ornare a nibh vehicula, pharetra faucibus erat. 
-    Etiam a ante at mauris luctus bibendum. Ut venenatis tellus id sagittis laoreet.
-    Suspendisse ornare et velit sit amet fringilla. Duis est risus, 
-    elementum vitae faucibus sit amet, suscipit a eros. Morbi turpis 
-    dolor, accumsan at est et, dapibus imperdiet tortor. 
-    Morbi ex lectus, tristique nec porta id, tincidunt eget sem.
-    Donec molestie nisl non lacinia cursus.
-    `,
-    status: StepStatus.COMPLETED,
+    status: StepStatus.ACTIVE,
   },
 ];
 

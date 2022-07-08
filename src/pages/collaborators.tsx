@@ -2,85 +2,87 @@ import React from "react";
 
 const FACULTIES: CollaboratorProps[] = [
   {
-    name: "John Doe",
+    name: "Luis A. Cueva Parra",
     title: "Professor",
-    school: "University of California, Berkeley",
+    school: "University of North Georgia, Dahlonega, GA",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/cueva_parra_luis.jpeg", import.meta.url),
   },
   {
-    name: "John Doe",
+    name: "Semih Dinc",
     title: "Professor",
-    school: "University of California, Berkeley",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/dinc_semih.jpeg", import.meta.url),
   },
   {
-    name: "John Doe",
+    name: "Olcay Kursun",
     title: "Professor",
-    school: "University of California, Berkeley",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/Olcay_Kursun.jpeg", import.meta.url),
   },
   {
-    name: "John Doe",
+    name: "Randy Russel",
     title: "Professor",
-    school: "University of California, Berkeley",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
-  },
-  {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
-    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
-  },
-  {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
-    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/russell_randy.jpeg", import.meta.url),
   },
 ];
 
 const STUDENTS = [
   {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
+    name: "Giovanni Bellio",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
     image:
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
   {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
+    name: "Stone Franklin",
+    title: "Undergraduate Research Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during summer and fall 2021",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+  },
+  {
+    name: "Ben Nguyen",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
     image:
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
   {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
+    name: "Benjamin Kim",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
     image:
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
   {
-    name: "John Doe",
-    title: "Professor",
-    school: "University of California, Berkeley",
-    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
+    name: "Deep Patel",
+    title: "Undergraduate Research Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during summer 2022",
+    image: new URL("../imgs/patel_deep.jpg", import.meta.url),
+  },
+  {
+    name: "Smit Patel",
+    title: "Undergraduate Research Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during summer and fall 2021",
+    image: new URL("../imgs/patel_smit.jpeg", import.meta.url),
+  },
+  {
+    name: "Andrew Satory",
+    title: "Undergraduate Research Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during summer 2022",
     image:
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
@@ -114,7 +116,7 @@ export default function Collaborators() {
 interface CollaboratorProps {
   name: string;
   title: string;
-  image: string;
+  image: URL | string;
   school: string;
   desc: string;
 }
@@ -125,7 +127,7 @@ function Collaborator(props: CollaboratorProps) {
       <div className="w-full h-80 mx-auto">
         <img
           className="w-80 h-80 mx-auto object-cover rounded-md"
-          src={props.image}
+          src={props.image as unknown as string}
           alt={props.name}
         />
       </div>
