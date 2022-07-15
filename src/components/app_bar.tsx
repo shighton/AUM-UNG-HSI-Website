@@ -27,6 +27,10 @@ const Links = [
     text: "Contact",
   },
   {
+    path: "/publications",
+    text: "Publications",
+  },
+  {
     path: "/timeline",
     text: "Timeline",
   },

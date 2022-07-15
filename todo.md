@@ -1,4 +1,5 @@
-- hamburger menu
-- link all pages
-- download all the imgs
+- syslabs
+- source code github
+- gateway (https://gateway.ung.scigap.org/auth/login?next=/workspace/dashboard)
+- jupyter book (documentation)
 -
