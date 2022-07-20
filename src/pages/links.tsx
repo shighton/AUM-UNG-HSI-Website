@@ -34,6 +34,14 @@ const InfoLinks: InfoLinkProps[] = [
     linkTitle: "Visit Gateway",
   },
   {
+    img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
+    title: "Gateway Custom UI Implementation",
+    description:
+      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+    link: "https://github.com/deepp0925/frontend",
+    linkTitle: "View on Github",
+  },
+  {
     img: "https://ahana.io/wp-content/uploads/2021/04/518px-Jupyter_logo.svg_.png",
     title: "Documentation",
     description:
