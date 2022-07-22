@@ -2,6 +2,7 @@
   "name": "project_website",
   "version": "1.0.0",
   "description": "Project website for hyperspectral imagery research",
+  "homepage": "https://deepp0925.github.io/project_website/",
   "scripts": {
     "start": "parcel src/index.html --open",
     "predeploy": "npm run build",
