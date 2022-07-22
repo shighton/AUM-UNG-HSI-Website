@@ -83,8 +83,7 @@ const STUDENTS = [
     title: "Undergraduate Research Student",
     school: "University of North Georgia, Dahlonega, GA",
     desc: "Worked during summer 2022",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/satory_andrew.jpg", import.meta.url),
   },
 ];
 

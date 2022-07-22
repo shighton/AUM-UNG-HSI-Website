@@ -9,6 +9,7 @@
     "clean": "rm -rf dist .parcel-cache",
     "full-clean": "npm run clean && rm -rf node_modules package-lock.json",
     "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist",
+    "publish": "npm run deploy",
     "build": "parcel build src/index.html --public-url ./"
   },
   "author": "Deep Patel",
