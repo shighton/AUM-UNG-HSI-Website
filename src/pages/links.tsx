@@ -25,6 +25,28 @@ const InfoLinks: InfoLinkProps[] = [
     link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
     linkTitle: "View on Syslab",
   },
+];
+
+const ResourceLinks: InfoLinkProps[] = [
+  {
+    img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
+    title: "DeepHyperX",
+    description:
+      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+    link: "https://github.com/nshaud/DeepHyperX",
+    linkTitle: "View on Github",
+  },
+  {
+    img: "https://www.nicepng.com/png/detail/764-7642487_user-guides-user-guide-icon.png",
+    title: "Expanse User Guide",
+    description:
+      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+    link: "https://www.sdsc.edu/support/user_guides/expanse.html",
+    linkTitle: "View User Guide",
+  },
+];
+
+const GatewayLinks: InfoLinkProps[] = [
   {
     img: "https://airavata.apache.org/assets/img/airavata-logo.png",
     title: "AUM-UNG Gateway",
@@ -41,6 +63,9 @@ const InfoLinks: InfoLinkProps[] = [
     link: "https://github.com/deepp0925/frontend",
     linkTitle: "View on Github",
   },
+];
+
+const DocumentationLink: InfoLinkProps[] = [
   {
     img: "https://ahana.io/wp-content/uploads/2021/04/518px-Jupyter_logo.svg_.png",
     title: "Documentation",
@@ -54,9 +79,33 @@ const InfoLinks: InfoLinkProps[] = [
 export default function Links() {
   return (
     <div className="px-8 pb-20">
-      <h1 className="text-xl font-semibold">Links</h1>
+      <h1 className="text-xl font-semibold">Source Code</h1>
       <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
         {InfoLinks.map((info) => (
+          <div className="col-span-1" key={info.title}>
+            <InfoLink {...info} />
+          </div>
+        ))}
+      </div>
+      <h1 className="text-xl font-semibold mt-12">Gateway</h1>
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {GatewayLinks.map((info) => (
+          <div className="col-span-1" key={info.title}>
+            <InfoLink {...info} />
+          </div>
+        ))}
+      </div>
+      <h1 className="text-xl font-semibold mt-12">Documentation</h1>
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {DocumentationLink.map((info) => (
+          <div className="col-span-1" key={info.title}>
+            <InfoLink {...info} />
+          </div>
+        ))}
+      </div>
+      <h1 className="text-xl font-semibold mt-12">Resources</h1>
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {ResourceLinks.map((info) => (
           <div className="col-span-1" key={info.title}>
             <InfoLink {...info} />
           </div>

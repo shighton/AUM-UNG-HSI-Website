@@ -64,7 +64,7 @@ export function Home() {
           of HPC tools to the classification models (Phase 3). Finally in the
           third year, we will complete implementation, testing, and deployment
           of the open-source software (Phase 4). The project will be managed by
-          two PIs Dr. Semih Dinc and Dr. Luis Cueva Parra.
+          two PIs Dr. Semih Dinc, Dr. Olcay Kursun, and Dr. Luis Cueva Parra.
         </p>
       </div>
       <div className="mt-16">

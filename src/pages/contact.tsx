@@ -13,12 +13,12 @@ const FACULTIES: ContactPerson[] = [
     phone: "123-456-7890",
     image: new URL("../imgs/cueva_parra_luis.jpeg", import.meta.url),
   },
-  {
-    name: "Semih Dinc",
-    email: "semihdinc@mail.com",
-    phone: "123-456-7890",
-    image: new URL("../imgs/dinc_semih.jpeg", import.meta.url),
-  },
+  // {
+  //   name: "Semih Dinc",
+  //   email: "semihdinc@mail.com",
+  //   phone: "123-456-7890",
+  //   image: new URL("../imgs/dinc_semih.jpeg", import.meta.url),
+  // },
   {
     name: "Olcay Kursun",
     email: "olcaykursunmail@mail.com",
