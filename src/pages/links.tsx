@@ -6,24 +6,36 @@ const InfoLinks: InfoLinkProps[] = [
     title: "AUM-Dataset",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://github.com/Fennrii/AUM-UNG-HSI-Repository",
-    linkTitle: "View on Github",
+    links: [
+      {
+        link: "https://github.com/Fennrii/AUM-UNG-HSI-Repository",
+        title: "View on Github",
+      },
+    ],
   },
   {
     img: "https://yt3.ggpht.com/ytc/AKedOLT-hB3o0KmEz46j12f59PTEDEjvBqMzH1j8L8w1=s900-c-k-c0x00ffffff-no-rj",
     title: "AUM Container - Version 1",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
-    linkTitle: "View on Syslab",
+    links: [
+      {
+        link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
+        title: "View on Syslab",
+      },
+    ],
   },
   {
     img: "https://yt3.ggpht.com/ytc/AKedOLT-hB3o0KmEz46j12f59PTEDEjvBqMzH1j8L8w1=s900-c-k-c0x00ffffff-no-rj",
     title: "AUM Container - Version 2",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
-    linkTitle: "View on Syslab",
+    links: [
+      {
+        link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
+        title: "View on Syslab",
+      },
+    ],
   },
 ];
 
@@ -33,16 +45,24 @@ const ResourceLinks: InfoLinkProps[] = [
     title: "DeepHyperX",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://github.com/nshaud/DeepHyperX",
-    linkTitle: "View on Github",
+    links: [
+      {
+        link: "https://github.com/nshaud/DeepHyperX",
+        title: "View on Github",
+      },
+    ],
   },
   {
     img: "https://www.nicepng.com/png/detail/764-7642487_user-guides-user-guide-icon.png",
     title: "Expanse User Guide",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://www.sdsc.edu/support/user_guides/expanse.html",
-    linkTitle: "View User Guide",
+    links: [
+      {
+        link: "https://www.sdsc.edu/support/user_guides/expanse.html",
+        title: "View User Guide",
+      },
+    ],
   },
 ];
 
@@ -52,16 +72,28 @@ const GatewayLinks: InfoLinkProps[] = [
     title: "AUM-UNG Gateway",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://gateway.ung.scigap.org/auth/login?next=/workspace/dashboard",
-    linkTitle: "Visit Gateway",
+    links: [
+      {
+        link: "https://gateway.ung.scigap.org/auth/login?next=/workspace/dashboard",
+        title: "Visit Gateway",
+      },
+    ],
   },
   {
     img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
     title: "Gateway Custom UI Implementation",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://github.com/deepp0925/frontend",
-    linkTitle: "View on Github",
+    links: [
+      {
+        link: "https://github.com/deepp0925/frontend",
+        title: "View on Github",
+      },
+      {
+        link: "https://deepp0925.github.io/frontend/",
+        title: "View on Website",
+      },
+    ],
   },
 ];
 
@@ -71,8 +103,12 @@ const DocumentationLink: InfoLinkProps[] = [
     title: "Documentation",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    link: "https://fennrii.github.io/JupyterBook/intro.html",
-    linkTitle: "View Documentation",
+    links: [
+      {
+        link: "https://fennrii.github.io/JupyterBook/intro.html",
+        title: "View Documentation",
+      },
+    ],
   },
 ];
 
@@ -115,17 +151,21 @@ export default function Links() {
   );
 }
 
+interface LinkDetails {
+  title: string;
+  link: string;
+}
+
 interface InfoLinkProps {
   img: URL | string;
   title: string;
   description: string;
-  link: string;
-  linkTitle: string;
+  links: LinkDetails[];
 }
 
-function InfoLink({ img, title, description, link, linkTitle }: InfoLinkProps) {
+function InfoLink({ img, title, description, links }: InfoLinkProps) {
   return (
-    <div className="flex w-full max-h-52 border border-zinc-400 p-3 rounded-md">
+    <div className="flex w-full h-auto border border-zinc-400 p-3 rounded-md">
       <img
         src={img as unknown as string}
         className="object-contain h-40 rounded-md"
@@ -133,9 +173,15 @@ function InfoLink({ img, title, description, link, linkTitle }: InfoLinkProps) {
       <div className="ml-4 flex-1 flex flex-col">
         <h2 className="text-lg font-semibold">{title}</h2>
         <p className="text flex-1">{description}</p>
-        <a href={link} target="_blank" className="text-blue-500">
-          {linkTitle}
-        </a>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {links.map((details) => (
+            <div className="col-span-1" key={details.title}>
+              <a href={details.link} target="_blank" className="text-blue-500">
+                {details.title}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
