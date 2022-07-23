@@ -49,7 +49,7 @@ const STUDENTS = [
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
   {
-    name: "Ben Nguyen",
+    name: "Benjamin Kim",
     title: "Student",
     school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
@@ -57,7 +57,23 @@ const STUDENTS = [
       "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
   {
-    name: "Benjamin Kim",
+    name: "Chengyuan Ma",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
+    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
+    image: new URL("../imgs/ma_chengyuan.jpg", import.meta.url),
+  },
+
+  {
+    name: "Michael Navarro",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
+    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+  },
+  {
+    name: "Ben Nguyen",
     title: "Student",
     school: "Aurbun University at Montgomery, AL",
     desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
@@ -79,11 +95,27 @@ const STUDENTS = [
     image: new URL("../imgs/patel_smit.jpeg", import.meta.url),
   },
   {
+    name: "Thao Pham",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
+    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+  },
+  {
     name: "Andrew Satory",
     title: "Undergraduate Research Student",
     school: "University of North Georgia, Dahlonega, GA",
     desc: "Worked during summer 2022",
     image: new URL("../imgs/satory_andrew.jpg", import.meta.url),
+  },
+  {
+    name: "Kylie Tran",
+    title: "Student",
+    school: "Aurbun University at Montgomery, AL",
+    desc: "John Doe is a Professor at the University of California, Berkeley. He is the head of the Department of Computer Science and the Director of the Center for Computational Science and Engineering.",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
   },
 ];
 
