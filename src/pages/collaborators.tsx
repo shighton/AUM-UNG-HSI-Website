@@ -37,8 +37,7 @@ const STUDENTS = [
     title: "Super Amazing Student",
     school: "University of North Georgia, Dahlonega, GA",
     desc: "Worked during the Summer of 2023.",
-    image:
-      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+    image: new URL("../imgs/Sabastian_Highton.png", import.meta.url),
   },
   {
     name: "Jay Kleine",
