@@ -33,6 +33,22 @@ const FACULTIES: CollaboratorProps[] = [
 
 const STUDENTS = [
   {
+    name: "Sabastian Highton",
+    title: "Super Amazing Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during the Summer of 2023.",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+  },
+  {
+    name: "Jay Kleine",
+    title: "Student",
+    school: "University of North Georgia, Dahlonega, GA",
+    desc: "Worked during the Summer of 2023.",
+    image:
+      "https://cdn.britannica.com/85/205685-050-24677990/Ryan-Reynolds-2011.jpg",
+  },
+  {
     name: "Giovanni Bellio",
     title: "Student",
     school: "Aurbun University at Montgomery, AL",
