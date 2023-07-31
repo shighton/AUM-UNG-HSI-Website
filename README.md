@@ -4,7 +4,7 @@ In order to update and make changes to existing website you must be added as a c
 
 ## Setup
 
-1. Once Node.js is installed, clone the project (run on your computer - `git clone https://github.com/Deepp0925/project_website.git`)
+1. Once Node.js is installed, clone the project (run on your computer - `git clone https://github.com/shighton/AUM-UNG-HSI-Website.git`)
 2. At the root of the project, run `npm install` - this will read the `package.json` file and download all the dependencies.
 3. Now run `npm start` and your default browser will open with live-reload
 
