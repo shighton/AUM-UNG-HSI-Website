@@ -5,10 +5,10 @@ const InfoLinks: InfoLinkProps[] = [
     img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
     title: "AUM-UNG-HSI Dataset",
     description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+      "Project Github page with Dr. Kursun's fixes",
     links: [
       {
-        link: "https://github.com/Fennrii/AUM-UNG-HSI-Repository",
+        link: "https://github.com/shighton/AUM-UNG-HSI-Research",
         title: "View on Github",
       },
     ],
