@@ -3,7 +3,7 @@ import React from "react";
 const InfoLinks: InfoLinkProps[] = [
   {
     img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
-    title: "AUM-Dataset",
+    title: "AUM-UNG-HSI Dataset",
     description:
       "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
     links: [
@@ -15,24 +15,12 @@ const InfoLinks: InfoLinkProps[] = [
   },
   {
     img: "https://yt3.ggpht.com/ytc/AKedOLT-hB3o0KmEz46j12f59PTEDEjvBqMzH1j8L8w1=s900-c-k-c0x00ffffff-no-rj",
-    title: "AUM Container - Version 1",
+    title: "AUM-UNG-HSI-Research-7-31-2023 Container",
     description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+      "This SIF container includes Dr. Kursun's fixes for the previous container.",
     links: [
       {
-        link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
-        title: "View on Syslab",
-      },
-    ],
-  },
-  {
-    img: "https://yt3.ggpht.com/ytc/AKedOLT-hB3o0KmEz46j12f59PTEDEjvBqMzH1j8L8w1=s900-c-k-c0x00ffffff-no-rj",
-    title: "AUM Container - Version 2",
-    description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
-    links: [
-      {
-        link: "https://cloud.sylabs.io/library/andrew_satory/aum_ung_three_layer/aum-dataset",
+        link: "https://cloud.sylabs.io/library/shighton/hsi/aum-ung-hsi-research-7-31-2023",
         title: "View on Syslab",
       },
     ],
@@ -42,12 +30,12 @@ const InfoLinks: InfoLinkProps[] = [
 const ResourceLinks: InfoLinkProps[] = [
   {
     img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
-    title: "DeepHyperX",
+    title: "AUM-UNG-HSI-Research Github",
     description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+      "The project Github folder with Dr. Kursun's fixes.",
     links: [
       {
-        link: "https://github.com/nshaud/DeepHyperX",
+        link: "https://github.com/shighton/AUM-UNG-HSI-Research",
         title: "View on Github",
       },
     ],
@@ -56,7 +44,7 @@ const ResourceLinks: InfoLinkProps[] = [
     img: "https://www.nicepng.com/png/detail/764-7642487_user-guides-user-guide-icon.png",
     title: "Expanse User Guide",
     description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+      "The expanse user guide",
     links: [
       {
         link: "https://www.sdsc.edu/support/user_guides/expanse.html",
