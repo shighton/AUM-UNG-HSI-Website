@@ -34,14 +34,14 @@ const FACULTIES: CollaboratorProps[] = [
 const STUDENTS = [
   {
     name: "Sabastian Highton",
-    title: "Super Amazing Student",
+    title: "Super Amazing Student Researcher",
     school: "University of North Georgia, Dahlonega, GA",
     desc: "Worked during the Summer of 2023.",
     image: new URL("../imgs/Sabastian_Highton.png", import.meta.url),
   },
   {
     name: "Jay Kleine",
-    title: "Student",
+    title: "Super Extraordinary Student Researcher",
     school: "University of North Georgia, Dahlonega, GA",
     desc: "Worked during the Summer of 2023.",
     image:
