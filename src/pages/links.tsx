@@ -108,7 +108,7 @@ const ResultsLink: InfoLinkProps[] = [
       "Spreadsheet file for results",
     links: [
       {
-        link: "./Documents/DeepHyperXData.xlsx",
+        link: "../Documents/DeepHyperXData.xlsx",
         title: "View Results",
       },
     ],
