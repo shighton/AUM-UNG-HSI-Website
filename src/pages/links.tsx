@@ -3,7 +3,7 @@ import React from "react";
 const InfoLinks: InfoLinkProps[] = [
   {
     img: "https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU",
-    title: "AUM-UNG-HSI Dataset",
+    title: "AUM-UNG-HSI Research",
     description:
       "Project Github page with Dr. Kursun's fixes",
     links: [
