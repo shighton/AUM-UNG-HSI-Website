@@ -90,10 +90,10 @@ const DocumentationLink: InfoLinkProps[] = [
     img: "https://ahana.io/wp-content/uploads/2021/04/518px-Jupyter_logo.svg_.png",
     title: "Documentation",
     description:
-      "This branch changed the threeLayer model to allow it to be run using different datasets, and also updated models.py to allow for larger datasets ",
+      "Jay's version of the Jupyter Book",
     links: [
       {
-        link: "https://fennrii.github.io/JupyterBook/intro.html",
+        link: "https://jkleine.github.io/JupyterBookUpdate/intro.html",
         title: "View Documentation",
       },
     ],
