@@ -100,6 +100,21 @@ const DocumentationLink: InfoLinkProps[] = [
   },
 ];
 
+const ResultsLink: InfoLinkProps[] = [
+  {
+    img: "https://ahana.io/wp-content/uploads/2021/04/518px-Jupyter_logo.svg_.png",
+    title: "Results Excel File",
+    description:
+      "Spreadsheet file for results",
+    links: [
+      {
+        link: "./Documents/DeepHyperXData.xlsx",
+        title: "View Results",
+      },
+    ],
+  },
+];
+
 export default function Links() {
   return (
     <div className="px-8 pb-20">
@@ -137,7 +152,7 @@ export default function Links() {
       </div>
       <h1 className="text-xl font-semibold mt-12">Results</h1>
       <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
-        {ResourceLinks.map((info) => (
+        {ResultsLink.map((info) => (
           <div className="col-span-1" key={info.title}>
             <InfoLink {...info} />
           </div>
