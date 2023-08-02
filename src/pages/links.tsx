@@ -14,7 +14,7 @@ const InfoLinks: InfoLinkProps[] = [
     ],
   },
   {
-    img: "https://yt3.ggpht.com/ytc/AKedOLT-hB3o0KmEz46j12f59PTEDEjvBqMzH1j8L8w1=s900-c-k-c0x00ffffff-no-rj",
+    img: "https://cloud.sylabs.io/assets/sylabs-main-logo-b30cab3f.png",
     title: "AUM-UNG-HSI-Research-7-31-2023 Container",
     description:
       "This SIF container includes Dr. Kursun's fixes for the previous container.",
