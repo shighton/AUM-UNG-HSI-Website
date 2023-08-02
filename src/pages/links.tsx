@@ -14,7 +14,7 @@ const InfoLinks: InfoLinkProps[] = [
     ],
   },
   {
-    img: "../imgs/Sylab_160x.png",
+    img: "./imgs/Sylab_160x.png",
     title: "AUM-UNG-HSI-Research-7-31-2023 Container",
     description:
       "This SIF container includes Dr. Kursun's fixes for the previous container.",
@@ -102,7 +102,7 @@ const DocumentationLink: InfoLinkProps[] = [
 
 const ResultsLink: InfoLinkProps[] = [
   {
-    img: "../imgs/Excel_Logo_160x.png",
+    img: "./imgs/Excel_Logo_160x.png",
     title: "UNG Access Only Results Excel File",
     description:
       "Spreadsheet file for results",
