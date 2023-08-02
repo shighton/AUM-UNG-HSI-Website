@@ -135,6 +135,14 @@ export default function Links() {
           </div>
         ))}
       </div>
+      <h1 className="text-xl font-semibold mt-12">Results</h1>
+      <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {ResourceLinks.map((info) => (
+          <div className="col-span-1" key={info.title}>
+            <InfoLink {...info} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
