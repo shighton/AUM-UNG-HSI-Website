@@ -103,7 +103,7 @@ const DocumentationLink: InfoLinkProps[] = [
 const ResultsLink: InfoLinkProps[] = [
   {
     img: "https://ahana.io/wp-content/uploads/2021/04/518px-Jupyter_logo.svg_.png",
-    title: "Results Excel File",
+    title: "UNG Access Only Results Excel File",
     description:
       "Spreadsheet file for results",
     links: [
