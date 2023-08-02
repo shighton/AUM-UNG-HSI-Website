@@ -102,7 +102,7 @@ const DocumentationLink: InfoLinkProps[] = [
 
 const ResultsLink: InfoLinkProps[] = [
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
+    img: "../imgs/Excel_Logo_160x.png",
     title: "UNG Access Only Results Excel File",
     description:
       "Spreadsheet file for results",
